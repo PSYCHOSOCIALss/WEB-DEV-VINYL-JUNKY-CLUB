@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinyl Junky Club</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- 90s Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">VINYL JUNKY CLUB</div>
+    <nav>
+        <a href="#home">Lobby</a>
+        <a href="#shop">Shop</a>
+        <a href="#gift">Gift Card</a>
+    </nav>
+</header>
+
+<!-- SECTION 1 (Lobby) -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>VINYL RECORDS<br>FOR ALL OCCASIONS</h1>
+        <p>Soundtrack every moment — from midnight drives to slow Sunday mornings.</p>
+        <button onclick="scrollToSection('shop')">SHOP VINYL</button>
+    </div>
+
+    <div class="hero-grid">
+        <div class="image-box"><img src="im1.1.png" alt="Vinyl1"></div>
+        <div class="image-box"><img src="im1.2.png" alt="Vinyl2"></div>
+        <div class="image-box"><img src="im1.3.png" alt="Vinyl3"></div>
+        <div class="image-box"><img src="im1.4.png" alt="Vinyl4"></div>
+        <div class="image-box"><img src="im1.5.png" alt="Vinyl5"></div>
+        <div class="image-box"><img src="im1.6.png" alt="Vinyl6"></div>
+    </div>
+
+    <div class="dvd-logo">VINYL JUNKY FREQUENCY</div>
+</section>
+
+<!-- SECTION 2 (Shop Categories) -->
+<section id="shop" class="shop-section">
+    <h2>Shop Vinyl Records</h2>
+
+    <div class="category-grid">
+        <div class="category">
+            <div class="image-large"><img src="New1.png" alt="New Releases"></div>
+            <h3>New Releases</h3>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="category">
+            <div class="image-large"><img src="Best1.png" alt="Best Sellers"></div>
+            <h3>Best Sellers</h3>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="category">
+            <div class="image-large"><img src="Top1.png" alt="Top Artists"></div>
+            <h3>Top Artists</h3>
+            <button>Shop Now</button>
+        </div>
+    </div>
+
+    <!-- LEGENDS WALL -->
+<div class="artist-wall">
+    <h2>LEGENDS • 1980s-2000s</h2>
+
+    <div class="marquee">
+        <div class="track">
+            <span>Michael Jackson</span>
+            <span>Madonna</span>
+            <span>Prince</span>
+            <span>Metallica</span>
+            <span>Nirvana</span>
+            <span>2Pac</span>
+            <span>Notorious B.I.G.</span>
+            <span>Radiohead</span>
+            <span>Oasis</span>
+            <span>Red Hot Chili Peppers</span>
+            <span>DR.Alban</span>
+        </div>
+    </div>
+
+    <div class="marquee right">
+        <div class="track">
+            <span>Eminem</span>
+            <span>Linkin Park</span>
+            <span>Kanye West</span>
+            <span>Coldplay</span>
+            <span>Beyoncé</span>
+            <span>Green Day</span>
+            <span>Daft Punk</span>
+            <span>Rihanna</span>
+            <span>Arctic Monkeys</span>
+            <span>Jay-Z</span>
+        </div>
+    </div>
+
+    <div class="marquee slow">
+        <div class="track">
+            <span>Guns N’ Roses</span>
+            <span>Whitney Houston</span>
+            <span>Blur</span>
+            <span>Foo Fighters</span>
+            <span>The Cure</span>
+            <span>Bon Jovi</span>
+            <span>Mariah Carey</span>
+            <span>System Of A Down</span>
+            <span>OutKast</span>
+            <span>Alicia Keys</span>
+            <span>Måneskin</span>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- SECTION 3 (Gift Card Page) -->
+<section id="gift" class="gift-section">
+    <div class="gift-container">
+
+        <div class="gift-image">
+        <img src="Gift Card.jpg" alt="Gift Card">
+        </div>
+
+        <div class="gift-info">
+            <h2>Gift Card / Voucher</h2>
+            <p class="price">$10.00</p>
+
+            <label>Value</label>
+            <select>
+                <option>$10</option>
+                <option>$25</option>
+                <option>$50</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" value="1">
+
+            <button class="add-cart">Add to Cart</button>
+
+            <p class="gift-desc">
+                Not sure what to give? Let them choose their own soundtrack.
+                Our gift cards are delivered digitally and redeemable online.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

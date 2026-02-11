@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: #1c2331;
+    color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    background: #243047;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    color: #d4b15a;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #c5c5c5;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #d4b15a;
+}
+
+section {
+    min-height: 100vh;
+    padding: 120px 80px;
+}
+
+/* ========================= */
+/* HERO SECTION (ปรับใหม่) */
+/* ========================= */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text {
+    width: 45%;
+}
+
+.hero-text h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero-text button {
+    padding: 12px 25px;
+    background: #8c9b6f;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* รูปใหญ่ขึ้นเกือบครึ่งหน้า */
+.hero-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-box {
+    width: 100%;
+    height: 220px;
+    background: #b07d57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+/* ========================= */
+/* SHOP (ไม่แก้ตามที่ขอ) */
+/* ========================= */
+
+.shop-section {
+    text-align: center;
+    background: #243047;
+}
+
+.shop-section h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-family: 'Orbitron';
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category {
+    width: 300px;
+}
+
+.image-large {
+    height: 250px;
+    background: #8c9b6f;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category button {
+    padding: 10px 20px;
+    background: #d4b15a;
+    border: none;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* GIFT SECTION (จัดกลาง + ใหญ่ขึ้น) */
+/* ========================= */
+
+.gift-section {
+    background: #1c2331;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift-container {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+/* รูปใหญ่ขึ้น */
+.gift-image {
+    width: 500px;
+    height: 320px;
+    background: #b07d57;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.gift-info {
+    max-width: 400px;
+}
+
+.gift-info h2 {
+    font-family: 'Orbitron';
+    font-size: 35px;
+}
+
+.price {
+    font-size: 25px;
+    margin: 10px 0 20px;
+}
+
+.gift-info select,
+.gift-info input {
+    display: block;
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.add-cart {
+    background: #8c9b6f;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.gift-desc {
+    font-size: 20px;
+}
+
+
+.image-box img,
+.image-large img,
+.gift-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover top;
+}
+
+/* ========================= */
+/* ARTIST WALL */
+/* ========================= */
+
+.artist-wall {
+    margin-top: 80px;
+    padding: 60px 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.artist-wall h2 {
+    text-align: center;
+    font-family: 'Orbitron';
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: #d4b15a;
+    letter-spacing: 3px;
+}
+
+/* fade ขอบซ้ายขวา */
+.artist-wall::before,
+.artist-wall::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.artist-wall::before {
+    left: 0;
+    background: linear-gradient(to right, #1c2331, transparent);
+}
+
+.artist-wall::after {
+    right: 0;
+    background: linear-gradient(to left, #1c2331, transparent);
+}
+
+/* scanline CRT effect */
+.artist-wall::after {
+    box-shadow: inset 0 0 80px rgba(0,0,0,0.5);
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 30px 0;
+}
+
+.track {
+    display: inline-block;
+    animation: scroll-left 25s linear infinite;
+}
+
+.marquee.right .track {
+    animation: scroll-right 30s linear infinite;
+}
+
+.marquee.slow .track {
+    animation-duration: 40s;
+}
+
+.marquee.slower .track {
+    animation-duration: 55s;
+}
+
+.marquee span {
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 28px;
+    color: #c5c5c5;
+    transition: 0.3s;
+}
+
+.marquee span:hover {
+    color: #d4b15a;
+    transform: scale(1.2);
+}
+
+/* hover แล้วหยุด */
+.marquee:hover .track {
+    animation-play-state: paused;
+}
+
+/* Animation */
+@keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+/* เส้น CRT บาง ๆ */
+.artist-wall {
+    background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.03) 0px,
+        rgba(255,255,255,0.03) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+}
+
+/* DVD Floating Logo */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.dvd-logo {
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+}
