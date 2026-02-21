@@ -15,12 +15,12 @@ let dy = 2;
 function randomColor() {
     const colors = [
         "#ff0055",
-        "#00ffff",
-        "#f5c16c",
-        "#8c9b6f",
+        "#0079FF",
+        "#FE6244",
+        "#5800FF",
         "#ff00ff",
         "#00ff00",
-        "#ffffff"
+        "#FFCD38"
     ];
     return colors[Math.floor(Math.random() * colors.length)];
 }
@@ -49,3 +49,12 @@ function animate() {
 }
 
 animate();
+
+function openShop(){
+  document.getElementById("shopModal").classList.add("active");
+}
+
+function closeShop(){
+  document.getElementById("shopModal").classList.remove("active");
+}
+
