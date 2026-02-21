@@ -26,7 +26,10 @@
         <h1>VINYL RECORDS<br>FOR ALL OCCASIONS</h1>
         <p>Soundtrack every moment — from midnight drives to slow Sunday mornings.</p>
         <button onclick="scrollToSection('shop')">SHOP VINYL</button>
+        <br><br> 
+        <a href="table.html" class="more-link">Place Order - CLICK HERE!</a>
     </div>
+   
 
     <div class="hero-grid">
         <div class="image-box"><img src="im1.1.png" alt="Vinyl1"></div>
@@ -48,7 +51,7 @@
         <div class="category">
             <div class="image-large"><img src="New1.png" alt="New Releases"></div>
             <h3>New Releases</h3>
-            <button>Shop Now</button>
+            <button onclick="openShop()">Shop Now</button>
         </div>
 
         <div class="category">
@@ -149,6 +152,291 @@
 
     </div>
 </section>
+
+<section class="footer-section">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Event</h3>
+            <div class="event">
+                <span class="event-date">10 OCT</span>
+                <p>Vinyl Night 2026 - รวมพลคนรักแผ่นเสียง พบเจอกับ Live DJ</p>
+            </div>
+            <div class="event">
+                <span class="event-date">22 NOV</span>
+                <p>Workshop: How to Start Vinyl Collection</p>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <p>Vinyl Junky เป็นพื้นที่รวมตัวของคนรักเสียงอนาล็อก แนะนำอัลบั้ม รีวิวแผ่นเสียง และกิจกรรมสำหรับสายวินเทจ</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email: vinyljunky@gmail.com</p>
+            <p>Phone: 099-999-9999</p>
+            <p>Location: Bangkok, Thailand</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Social Links</h3>
+            <ul class="social-links">
+                <li><a href="#">Facebok</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright 2026 Vinyl Junky. All rights reserved</p>
+    </div>
+</section>
+
+<!-- ================= SHOP MODAL ================= -->
+<div class="shop-modal" id="shopModal">
+  <div class="shop-box">
+    <div class="shop-header">
+      <h2>NEW RELEASES</h2>
+      <span class="close-btn" onclick="closeShop()">✕</span>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- 1 -->
+      <div class="product-card">
+        <img src="S.1.jpg">
+        <h4>Neon Frequency</h4>
+        <p>Track: Static Love</p>
+        <span>Artist: Vinyl Ghost</span>
+      </div>
+
+      <!-- 2 -->
+      <div class="product-card">
+        <img src="S.2.jpg">
+        <h4>Broken Cassette</h4>
+        <p>Track: Tape Rewind</p>
+        <span>Artist: Analog Hearts</span>
+      </div>
+
+      <!-- 3 -->
+      <div class="product-card">
+        <img src="S.3.jpg">
+        <h4>Late Night Frequency</h4>
+        <p>Track: FM Dreams</p>
+        <span>Artist: Radio Static</span>
+      </div>
+
+      <!-- 4 -->
+      <div class="product-card">
+        <img src="S.4.jpg">
+        <h4>Sunset Boulevard</h4>
+        <p>Track: Golden Hour</p>
+        <span>Artist: Retro Waves</span>
+      </div>
+
+      <!-- 5 -->
+      <div class="product-card">
+        <img src="S.5.jpg">
+        <h4>Midnight Motel</h4>
+        <p>Track: Room 404</p>
+        <span>Artist: Neon Sleep</span>
+      </div>
+
+      <!-- 6 -->
+      <div class="product-card">
+        <img src="S.6.jpg">
+        <h4>Analog Romance</h4>
+        <p>Track: Soft Noise</p>
+        <span>Artist: Pink Voltage</span>
+      </div>
+
+      <!-- 7 -->
+      <div class="product-card">
+        <img src="S.7.jpg">
+        <h4>VHS Memories</h4>
+        <p>Track: Tracking Error</p>
+        <span>Artist: Tape Kids</span>
+      </div>
+
+      <!-- 8 -->
+      <div class="product-card">
+        <img src="S.8.jpg">
+        <h4>City After Rain</h4>
+        <p>Track: Wet Asphalt</p>
+        <span>Artist: Lowlight Club</span>
+      </div>
+
+      <!-- 9 -->
+      <div class="product-card">
+        <img src="S.9.jpg">
+        <h4>Digital Tears</h4>
+        <p>Track: Blue Screen</p>
+        <span>Artist: Offline Love</span>
+      </div>
+
+      <!-- 10 -->
+      <div class="product-card">
+        <img src="S.10.jpg">
+        <h4>After Party</h4>
+        <p>Track: Last Cigarette</p>
+        <span>Artist: Night Shift</span>
+      </div>
+
+
+      
+      <!-- 11 -->
+      <div class="product-card">
+        <img src="S.11.jpg">
+        <h4>Tape Rewind Love</h4>
+        <p>Track: Analog</p>
+        <span>Artist: Vinyl Ghost</span>
+      </div>
+
+      <!-- 12 -->
+      <div class="product-card">
+        <img src="S.12.jpg">
+        <h4>Electric Sunset</h4>
+        <p>Track: Broken Cassette</p>
+        <span>Artist: Analog Hearts</span>
+      </div>
+
+      <!-- 13 -->
+      <div class="product-card">
+        <img src="S.13.jpg">
+        <h4>Funk in Basement</h4>
+        <p>Track: FCFS Dreams</p>
+        <span>Artist: Radio Static</span>
+      </div>
+
+      <!-- 14 -->
+      <div class="product-card">
+        <img src="S.14.jpg">
+        <h4>Boulevard</h4>
+        <p>Track: The Loneliest</p>
+        <span>Artist: Retro Waves</span>
+      </div>
+
+      <!-- 15 -->
+      <div class="product-card">
+        <img src="S.15.jpg">
+        <h4>Pink Static Dreams</h4>
+        <p>Track: 404</p>
+        <span>Artist: Neon Sleep</span>
+      </div>
+
+      <!-- 16 -->
+      <div class="product-card">
+        <img src="S.16.jpg">
+        <h4>INC.</h4>
+        <p>Track: Feels Good</p>
+        <span>Artist: Gorilllazz</span>
+      </div>
+
+      <!-- 17 -->
+      <div class="product-card">
+        <img src="S.17.jpg">
+        <h4>Ghost Mhz</h4>
+        <p>Track: Tracking Error</p>
+        <span>Artist: TrblKids</span>
+      </div>
+
+      <!-- 18 -->
+      <div class="product-card">
+        <img src="S.18.jpg">
+        <h4>Head 2 Big City</h4>
+        <p>Track: Wet Asphalt</p>
+        <span>Artist: Kool Kidz Club</span>
+      </div>
+
+      <!-- 19 -->
+      <div class="product-card">
+        <img src="S.19.jpg">
+        <h4>Faded Polaroids</h4>
+        <p>Track: Daze Screen</p>
+        <span>Artist: Overhead Love</span>
+      </div>
+
+      <!-- 20 -->
+      <div class="product-card">
+        <img src="S.20.jpg">
+        <h4>After Paradise</h4>
+        <p>Track: Last Cigarette</p>
+        <span>Artist: Night Shift Worker</span>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+<div id="shopModal" class="shop-modal">
+  <div class="shop-content">
+    <span class="close-btn" onclick="closeShop()">✕</span>
+
+    <h2>New Releases • Vinyl Shop</h2>
+
+    <table class="shop-table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>ชื่ออัลบั้ม</th>
+          <th>ราคา</th>
+          <th>Stock</th>
+          <th>สั่งซื้อ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Neon Echoes</td>
+          <td>690 บาท</td>
+          <td>10</td>
+          <td><button>สั่งซื้อ</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Midnight Static</td>
+          <td>650 บาท</td>
+          <td>8</td>
+          <td><button>สั่งซื้อ</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Analog Dreams</td>
+          <td>720 บาท</td>
+          <td>12</td>
+          <td><button>สั่งซื้อ</button></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Broken Cassette</td>
+          <td>680 บาท</td>
+          <td>6</td>
+          <td><button>สั่งซื้อ</button></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Retro City Lights</td>
+          <td>750 บาท</td>
+          <td>9</td>
+          <td><button>สั่งซื้อ</button></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Vinyl After Dark</td>
+          <td>699 บาท</td>
+          <td>7</td>
+          <td><button>สั่งซื้อ</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="update-date">ราคาและจำนวนอัปเดตล่าสุด 23 กันยายน 2568</p>
+  </div>
+</div>
 
 
 <script src="script.js"></script>
